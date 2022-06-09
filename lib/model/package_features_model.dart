@@ -1,4 +1,5 @@
 class PackageFeature {
+  final int packageId;
   final String feature1;
   final String feature2;
   final String feature3;
@@ -6,6 +7,7 @@ class PackageFeature {
   final String feature5;
 
   PackageFeature({
+    required this.packageId,
     required this.feature1,
     required this.feature2,
     required this.feature3,

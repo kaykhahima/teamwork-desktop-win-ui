@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const colorPrimary = Color(0xff4a49f6);
+const colorPrimary = Color(0xff0560fd);
 const colorDark = Color(0xff25252b);
 const colorLight = Color(0xffffffff);
 const colorGray100 = Color(0xff686b79);
@@ -8,6 +8,7 @@ const colorGray80 = Color(0xff9fa1ad);
 const colorGray60 = Color(0xfff4f4f4);
 const colorAlert = Color(0xffd7575d);
 const colorWarning = Color(0xffe86825);
+const colorSuccess = Color(0xff28d380);
 const colorPinBox = Color(0xffc5bcca);
 const fontFamily = 'circular-std';
 
@@ -18,20 +19,20 @@ ThemeData teamWorkTheme = ThemeData(
     style: ButtonStyle(
       textStyle: MaterialStateProperty.all<TextStyle>(const TextStyle(
         fontFamily: fontFamily,
-        fontWeight: FontWeight.w600,
-        fontSize: 16,
+        fontWeight: FontWeight.w500,
+        fontSize: 14,
       )),
       padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-        const EdgeInsets.symmetric(horizontal: 32.0, vertical: 12.0),
+        const EdgeInsets.symmetric(horizontal: 32.0, vertical: 18.0),
       ),
       shape: MaterialStateProperty.all<OutlinedBorder>(
         const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
-            Radius.circular(4.0),
+            Radius.circular(10.0),
           ),
         ),
       ),
-      backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
+      backgroundColor: MaterialStateProperty.all<Color>(colorPrimary),
       minimumSize: MaterialStateProperty.all<Size>(
         const Size.fromHeight(48.0),
       ),

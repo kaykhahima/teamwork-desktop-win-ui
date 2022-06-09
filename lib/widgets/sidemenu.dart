@@ -54,7 +54,7 @@ class SideMenuState extends State<SideMenu> {
       child: Column(
         children: [
           Image.asset(
-            'assets/teamwork-logo.png',
+            'assets/images/teamwork-logo.png',
             height: 48.0,
             filterQuality: FilterQuality.high,
           ),

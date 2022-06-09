@@ -7,9 +7,9 @@ import 'package:teamwork/screens/home_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-    // setWindowTitle('Title');
+    await DesktopWindow.setMinWindowSize(const Size(1200, 1000));
   }
-  await DesktopWindow.setMinWindowSize(const Size(600, 800));
+
   runApp(const MyApp());
 }
 

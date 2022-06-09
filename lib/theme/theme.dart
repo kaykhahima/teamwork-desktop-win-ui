@@ -9,14 +9,15 @@ const colorGray60 = Color(0xfff4f4f4);
 const colorAlert = Color(0xffd7575d);
 const colorWarning = Color(0xffe86825);
 const colorPinBox = Color(0xffc5bcca);
+const fontFamily = 'circular-std';
 
 ThemeData teamWorkTheme = ThemeData(
   primaryColor: colorPrimary,
-  fontFamily: 'Inter',
+  fontFamily: fontFamily,
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
       textStyle: MaterialStateProperty.all<TextStyle>(const TextStyle(
-        fontFamily: 'Inter',
+        fontFamily: fontFamily,
         fontWeight: FontWeight.w600,
         fontSize: 16,
       )),
@@ -30,17 +31,7 @@ ThemeData teamWorkTheme = ThemeData(
           ),
         ),
       ),
-      // backgroundColor: MaterialStateProperty.all<Color>(colorPrimary),
-      backgroundColor: MaterialStateProperty.resolveWith<Color>(
-            (Set<MaterialState> states) {
-          if (states.contains(MaterialState.pressed)) {
-            return colorPrimary;
-          } else if (states.contains(MaterialState.disabled)) {
-            return colorGray80;
-          }
-          return colorPrimary; // Use the component's default.
-        },
-      ),
+      backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
       minimumSize: MaterialStateProperty.all<Size>(
         const Size.fromHeight(48.0),
       ),
@@ -50,7 +41,7 @@ ThemeData teamWorkTheme = ThemeData(
     style: ButtonStyle(
       textStyle: MaterialStateProperty.all<TextStyle>(
         const TextStyle(
-          fontFamily: 'Inter',
+          fontFamily: fontFamily,
           fontWeight: FontWeight.w600,
           fontSize: 16,
         ),
@@ -95,7 +86,7 @@ ThemeData teamWorkTheme = ThemeData(
     ),
     hintStyle: const TextStyle(
       fontSize: 16.0,
-      fontFamily: 'Inter',
+      fontFamily: fontFamily,
       fontWeight: FontWeight.w400,
       color: colorGray60,
     ),
@@ -115,43 +106,49 @@ ThemeData teamWorkTheme = ThemeData(
   textTheme: const TextTheme(
     subtitle1: TextStyle(
       fontSize: 12.0,
-      fontFamily: 'Inter',
+      fontFamily: fontFamily,
       fontWeight: FontWeight.w400,
       color: colorGray80,
     ),
     bodyText1: TextStyle(
       fontSize: 16.0,
-      fontFamily: 'Inter',
+      fontFamily: fontFamily,
       fontWeight: FontWeight.w400,
       color: colorGray100,
     ),
     bodyText2: TextStyle(
       fontSize: 14.0,
-      fontFamily: 'Inter',
+      fontFamily: fontFamily,
       fontWeight: FontWeight.w400,
       color: colorGray100,
     ),
     headline2: TextStyle(
       fontSize: 32.0,
-      fontFamily: 'Inter',
+      fontFamily: fontFamily,
       fontWeight: FontWeight.w700,
       color: colorLight,
     ),
     headline3: TextStyle(
       fontSize: 20.0,
-      fontFamily: 'Inter',
+      fontFamily: fontFamily,
       fontWeight: FontWeight.w700,
       color: colorGray100,
     ),
+    headline4: TextStyle(
+      fontSize: 18.0,
+      fontFamily: fontFamily,
+      fontWeight: FontWeight.w700,
+      color: colorDark,
+    ),
     headline5: TextStyle(
       fontSize: 16.0,
-      fontFamily: 'Inter',
+      fontFamily: fontFamily,
       fontWeight: FontWeight.w600,
       color: colorGray100,
     ),
     headline6: TextStyle(
       fontSize: 14.0,
-      fontFamily: 'Inter',
+      fontFamily: fontFamily,
       fontWeight: FontWeight.w600,
       color: colorGray100,
     ),
